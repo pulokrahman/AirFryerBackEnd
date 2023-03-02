@@ -18,7 +18,7 @@ on:
     branches: [ "main" ]
 
 env:
-    DATABASE_CONNECTIONTYPE:${{DATABASE_CONNECTIONTYPE}}
+    DATABASE_CONNECTIONTYPE:test
 
 
 jobs:
