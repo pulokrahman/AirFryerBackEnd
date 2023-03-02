@@ -10,7 +10,7 @@
 name: Java CI with Maven
 
 env:
-  ## Sets environment variable
+
   DATABASE_CONNECTIONTYPE: ${{DATABASE_CONNECTIONTYPE}}    
 
 
