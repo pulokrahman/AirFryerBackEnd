@@ -6,7 +6,12 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
+
 name: Java CI with Maven
+
+env:
+  ## Sets environment variable
+  DATABASE_CONNECTIONTYPE: ${{DATABASE_CONNECTIONTYPE}}    
 
 
 
@@ -17,8 +22,7 @@ on:
   pull_request:
     branches: [ "main" ]
 
-env:
-    DATABASE_CONNECTIONTYPE:test
+
 
 
 jobs:
@@ -26,9 +30,11 @@ jobs:
 
   build:
 
+
         
 
     runs-on: ubuntu-latest
+
 
     steps:
     - uses: actions/checkout@v3
