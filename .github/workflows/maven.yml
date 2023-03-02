@@ -8,6 +8,10 @@
 
 name: Java CI with Maven
 
+env:
+DATABASE_CONNECTIONTYPE:${{DATABASE_CONNECTIONTYPE}}
+
+
 on:
   push:
     branches: [ "main" ]
@@ -16,6 +20,8 @@ on:
 
 jobs:
   build:
+
+        
 
     runs-on: ubuntu-latest
 
